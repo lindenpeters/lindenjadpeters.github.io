@@ -5,8 +5,8 @@ title: Final Chronicle
 
 ## About Me
 
-Hi, I'm [Your First Name], a student interested in [short blurb—e.g., game design, storytelling, building things, etc.].  
-This project was part of my final quest in [course name], and it reflects what I’ve learned about [theme—e.g., creativity, code, perseverance].
+Hi, I'm Linden, a student interested in [short blurb—e.g., game design, storytelling, building things, etc.].  
+This project was part of my final quest in Programming Fundamentals, and it reflects what I’ve learned about [theme—e.g., creativity, code, perseverance].
 
 ## About My Project
 
