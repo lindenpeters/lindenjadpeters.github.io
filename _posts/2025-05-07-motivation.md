@@ -5,30 +5,27 @@ title: "Day 0 - Planning"
 
 ### Project Focus
 
-[What kind of project are you planning to build? Give it a working title and briefly describe what it is (e.g., a game, simulation, interactive story). What makes it interesting or challenging?]
-
+##### For my project, I will be creating the game 2048. The object is to use the arrow keys to combine squares to get to the number 2048. The final product will include a GUI and fully functioning logic.
 ---
 
 ### Why This Project 
 
-[What drew you to this idea? How does it connect to something you’re interested in—whether in or outside of class? Why is this the right project for *you* to work on right *now*?]
+##### I have always loved the game 2048. The mix of puzzle-solving and a fast pace makes the game very addictive. I think this is the perfect difficulty to challenge me but still have something feasibile.  
 
 ---
 
 ### What I Want to Learn
 
-[What programming concepts do you want to strengthen through this project (e.g., functions, conditionals, loops, data structures)?  
-Beyond coding, what personal or creative skills are you hoping to build—like debugging, problem solving, design, or perseverance?]
-
-
+##### I hope to learn pygame, a python graphics module. I also hope to enhance my programming logic by crafting the complicated system of the puzzle. Also, I would love to create a finished project without giving up.
 
 ### My Approach 
 
-[How do you plan to structure your time over the next two weeks? What will you focus on first? What will you prioritize later?  
-What does “done enough” look like to you—and how will you decide when to stop polishing?]
+##### I will begin by studying the pygame documentation and determining the useful information to learn. I will also dissect the game itself to understand all the under the hood mechanics. After the initial phase, I will make a prototype which will use a 4x4 array with basic functions such as being able to merge with other identical numbers in a certain direction and collide next to them otherwise. Hopefully I can finish the prototype in 3-4 days, which will leave the rest of my time for combining the two steps and turning my basic logic into a working game with a GUI. I will stay faithful to the general structure of the game although I might play around with how I can artistically display it.
 
 ---
 
 ### What's Next
 
-[What do you plan to tackle in the next stage of your project?]
+My first stage will be researching and gathering the needed information about pygame and how 2048 works. Until next blog!
+-Linden
+
