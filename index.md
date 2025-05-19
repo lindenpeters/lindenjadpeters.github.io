@@ -10,8 +10,8 @@ This project was part of my final quest in Programming Fundamentals, and it refl
 
 ## About My Project
 
-**Project Title:** *[Name it!]*   
-**One-line pitch:** [“A game where you…” or “A project that lets you…”]
+**Project Title:** **2048**   
+**One-line pitch:** A game where you combine tiles to try to get the number 2048.
 
 > Curious about what I’d do differently or recommend to others? Read my final thoughts here: [Final Tip & Takeaways](_posts/2025-05-23-tip.md)
 
