@@ -5,7 +5,7 @@ title: Final Chronicle
 
 ## About Me
 
-Hi, I'm Linden, a student interested in [short blurb—e.g., game design, storytelling, building things, etc.].  
+Hi, I'm Linden, a student interested in game design.  
 This project was part of my final quest in Programming Fundamentals, and it reflects what I’ve learned about [theme—e.g., creativity, code, perseverance].
 
 ## About My Project
