@@ -24,32 +24,26 @@ def left(squares):
     row = [int(x) for x in squares[r] if x != "0"]
     # using while loop since we change the length of the loop
     i = 0
-    while i < len(row)-1:
-      if row[i] == row[i + 1]:
-        row[i] *= 2
-        del row[i + 1]
-        i += 1
-      else:
-        i += 1
-    while len(row) < 4:
-      row.append("0")
+    while i < len(row) - 1:
+        if row[i] == row[i + 1]:
+            row[i] *= 2
+            del row[i + 1]
+        else:
+            i += 1
+    row += ["0"] * (4-len(row))
     squares[r] = [str(x) for x in row]
 def right(squares):
-  for r in range(4):
-    # convert to int for easy processing and getting rid of 0s
-    row = [int(x) for x in squares[r] if x != "0"]
-    # using while loop since we change the length of the loop
-    i = -1
-    while i > -(len(row)):
-      if row[i] == row[i - 1]:
-        row[i] *= 2
-        del row[i-1]
-        i -= 1
-      else:
-        i -= 1
-    while len(row) < 4:
-      row.insert(0,"0")
-    squares[r] = [str(x) for x in row]
+    for r in range(4):
+        row = [int(x) for x in squares[r] if x != "0"]
+        i = len(row) - 1
+        while i > 0:
+            if row[i] == row[i - 1]:
+                row[i] *= 2
+                del row[i - 1]
+                # don't decrement i again
+            i -= 1
+        row = [0] * (4 - len(row)) + row
+        squares[r] = [str(x) for x in row]
 def down(squares):
   for c in range(4):
     # convert to int for easy processing and getting rid of 0s
@@ -57,19 +51,19 @@ def down(squares):
     col = [int(squares[r][c]) for r in range(4) if squares[r][c] != "0"]
     # using while loop since we change the length of the loop
     
-    i = -1
-    while i > -(len(col)):
+    i = len(col) - 1
+    while i > 0:
       if col[i] == col[i - 1]:
         col[i] *= 2
-        del col[i-1]
-        i -= 1
-      else:
-        i -= 1
+        del col[i - 1]
+        i -= 1  # Skip over the merged tile
+      i -= 1
     while len(col) < 4:
       col.append("0")
     
     for r in range(4):
       squares[3-r][c] = col[r]
+
 def up(squares):
   for c in range(4):
     # convert to int for easy processing and getting rid of 0s
