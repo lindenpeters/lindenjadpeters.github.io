@@ -67,8 +67,9 @@ def down(squares):
         i -= 1
     while len(col) < 4:
       col.append("0")
+    
     for r in range(4):
-      squares[r][c] = col[r]
+      squares[3-r][c] = col[r]
 def up(squares):
   for c in range(4):
     # convert to int for easy processing and getting rid of 0s
