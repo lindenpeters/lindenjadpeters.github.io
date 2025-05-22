@@ -1,4 +1,4 @@
----
+.---
 layout: default
 title: Final Chronicle
 ---
@@ -7,6 +7,7 @@ title: Final Chronicle
 
 Hi, I'm Linden, a student interested in game design. I have never programmed a serious game from start to finish, so this was my first time.
 This project was part of my final quest in Programming Fundamentals, and it reflects what I’ve learned about coding with lists, and more generally using all the tools in my toolbox that I have developed this semester.
+[Original game i'm modeling](https://play2048.co/)
 
 ## About My Project
 
