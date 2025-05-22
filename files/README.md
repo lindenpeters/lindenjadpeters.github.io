@@ -41,3 +41,14 @@ Download 2048.py and save to a path you can access easily (i.e. desktop)
 
 Use cd to navigate to the folder where your file is in (using "copy file as path" in explorer can help)
 
+In your directory, type
+~~~
+python 2048.py
+~~~
+It should look like this:
+~~~
+C:\Users\linde\OneDrive\Desktop\2048> python 2048.py
+pygame 2.6.1 (SDL 2.28.4, Python 3.13.1)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+~~~
+And will open the game
