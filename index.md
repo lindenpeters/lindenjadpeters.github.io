@@ -5,8 +5,8 @@ title: Final Chronicle
 
 ## About Me
 
-Hi, I'm Linden, a student interested in game design.  
-This project was part of my final quest in Programming Fundamentals, and it reflects what I’ve learned about [theme—e.g., creativity, code, perseverance].
+Hi, I'm Linden, a student interested in game design. I have never programmed a serious game from start to finish, so this was my first time.
+This project was part of my final quest in Programming Fundamentals, and it reflects what I’ve learned about coding with lists, and more generally using all the tools in my toolbox that I have developed this semester.
 
 ## About My Project
 
@@ -15,7 +15,7 @@ This project was part of my final quest in Programming Fundamentals, and it refl
 
 > Curious about what I’d do differently or recommend to others? Read my final thoughts here: [Final Tip & Takeaways](_posts/2025-05-23-tip.md)
 
-🛠️ [Source Code (GitHub)](https://github.com/YOURUSERNAME/YOURPROJECT)  
+🛠️ [Source Code (GitHub)](https://github.com//YOURPROJECT)  
 
 ## Dev Log
 
