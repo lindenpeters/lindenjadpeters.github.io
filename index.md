@@ -16,7 +16,7 @@ This project was part of my final quest in Programming Fundamentals, and it refl
 
 > Curious about what I’d do differently or recommend to others? Read my final thoughts here: [Final Tip & Takeaways](_posts/2025-05-22-tip.md)
 
-🛠️ [Source Code (GitHub)](https://github.com/lindenpeters/lindenpeters.github.io/tree/287e0b253a8a072df6445631062b12f0d52706cf/files)
+🛠️ [Source Code (GitHub)]( files/)
 Make sure to read README.MD for instructions on how to run the code.
 
 ## Dev Log
