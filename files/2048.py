@@ -49,8 +49,9 @@ def right(squares):
             if row[i] == row[i - 1]:
                 row[i] *= 2
                 del row[i - 1]
-                # don't decrement i again
-            i -= 1
+                i -= 1
+            else:
+                i -= 1
         row = [0] * (4 - len(row)) + row
         squares[r] = [str(x) for x in row]
 def down(squares):
