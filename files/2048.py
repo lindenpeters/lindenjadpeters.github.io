@@ -45,24 +45,30 @@ def right(squares):
         row = [0] * (4 - len(row)) + row
         squares[r] = [str(x) for x in row]
 def down(squares):
-  for c in range(4):
-    # convert to int for easy processing and getting rid of 0s
-    # similar to before except col major, goes through each row r with a set column c
-    col = [int(squares[r][c]) for r in range(4) if squares[r][c] != "0"]
-    # using while loop since we change the length of the loop
-    
-    i = len(col) - 1
-    while i > 0:
-      if col[i] == col[i - 1]:
-        col[i] *= 2
-        del col[i - 1]
-        i -= 1  # Skip over the merged tile
-      i -= 1
-    while len(col) < 4:
-      col.append("0")
-    
-    for r in range(4):
-      squares[3-r][c] = col[r]
+    for c in range(4):
+        # Get all non-zero values in the column (top to bottom)
+        col = [int(squares[r][c]) for r in range(4) if squares[r][c] != "0"]
+        # Reverse to simulate bottom-up merging
+        col.reverse()
+        
+        # Merge identical numbers
+        i = 0
+        while i < len(col) - 1:
+            if col[i] == col[i + 1]:
+                col[i] *= 2
+                del col[i + 1]
+                i += 1
+            else:
+                i += 1
+        
+        # Pad with 0s at the end and reverse back
+        while len(col) < 4:
+            col.append(0)
+        col.reverse()
+        
+        # Write the merged column back into the grid (top to bottom)
+        for r in range(4):
+            squares[r][c] = col[r]
 
 def up(squares):
   for c in range(4):
