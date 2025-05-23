@@ -24,17 +24,26 @@ def left(squares):
     row = [int(x) for x in squares[r] if x != "0"]
     # using while loop since we change the length of the loop
     i = 0
-    while i < len(row) - 1:
-        if row[i] == row[i + 1]:
-            row[i] *= 2
-            del row[i + 1]
-        else:
-            i += 1
-    row += ["0"] * (4-len(row))
+    while i < len(row)-1:
+      # check if the adjacent number is equal
+      if row[i] == row[i + 1]:
+        # Multiply the number by 2 and delete the adjacent number (it is ahead and this is the left function)
+        row[i] *= 2
+        del row[i + 1]
+        # Iterating through while loop
+        i += 1
+      else:
+        i += 1
+    # Padding the right with zeros after moving left
+    while len(row) < 4:
+      row.append("0")
+    # sending the updated row back to squares
     squares[r] = [str(x) for x in row]
+
 def right(squares):
     for r in range(4):
         row = [int(x) for x in squares[r] if x != "0"]
+        # going backwards
         i = len(row) - 1
         while i > 0:
             if row[i] == row[i - 1]:
